@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ray"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <fragment xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:map="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <TableRow
+        android:visibility="gone"
+        android:id="@+id/tbnav"
+        android:background="#B4797979"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content">
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:visibility="invisible"
+                    android:layout_marginTop="10dp"
+                    android:src="@drawable/larrow"
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:id="@+id/mr_left"
+                    android:layout_weight="1" />
+
+                <TextView
+                    android:layout_marginBottom="10dp"
+                    android:textColor="@android:color/white"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:text="Large Text"
+                    android:id="@+id/mr_text"
+                    android:layout_weight="5" />
+
+                <ImageView
+                    android:layout_marginTop="10dp"
+                    android:src="@drawable/rarrow"
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:id="@+id/mr_right"
+                    android:layout_weight="1" />
+
+            </TableRow>
+
+            <TextView
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:id="@+id/cr_totdist"
+                android:layout_marginBottom="5dp"
+                android:textColor="@android:color/white"
+                android:layout_marginTop="5dp"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+    </TableRow>
+
+    <TableRow
+        android:visibility="gone"
+        android:id="@+id/tbfinish"
+        android:gravity="bottom"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <Button
+            android:textColor="@android:color/white"
+            android:textSize="18dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:background="#B4797979"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Finish"
+            android:id="@+id/mr_finish"
+            android:layout_weight="1" />
+    </TableRow>
+
+    <TableRow
+
+        android:id="@+id/tbprog"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ProgressBar
+            style="?android:attr/progressBarStyleLarge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/progressBar4" />
+    </TableRow>
+</RelativeLayout>

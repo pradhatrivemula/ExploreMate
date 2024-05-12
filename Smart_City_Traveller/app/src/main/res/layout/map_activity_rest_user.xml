@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <fragment
+        android:layout_below="@+id/tb"
+        xmlns:map="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/pmap"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MAP_Activity"
+        />
+
+    <TableRow
+        android:id="@+id/btntb"
+        android:background="#B4797979"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:textColor="@android:color/white"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:id="@+id/mra_totdist"
+                />
+
+        </LinearLayout>
+
+    </TableRow>
+
+    <TableRow
+        android:background="#B4797979"
+        android:layout_below="@+id/btntb"
+        android:id="@+id/tbline"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_marginTop="5dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/whiteline"
+            android:layout_width="0dp"
+            android:layout_height="2dp"
+            android:id="@+id/imageView"
+            android:layout_weight="1" />
+    </TableRow>
+
+    <TableRow
+        android:id="@+id/adist"
+        android:layout_below="@+id/tbline"
+        android:background="#B4797979"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:visibility="invisible"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/larrow"
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:id="@+id/mr_left"
+            android:layout_weight="1" />
+
+        <TextView
+            android:layout_marginBottom="10dp"
+            android:textColor="@android:color/white"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Large Text"
+            android:id="@+id/mr_text"
+            android:layout_weight="5" />
+
+        <ImageView
+            android:layout_marginTop="10dp"
+            android:src="@drawable/rarrow"
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:id="@+id/mr_right"
+            android:layout_weight="1" />
+
+    </TableRow>
+
+    <TableRow
+        android:id="@+id/tbfinish"
+        android:gravity="bottom"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <Button
+            android:textColor="@android:color/white"
+            android:textSize="18dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:background="#B4797979"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Confirm"
+            android:id="@+id/mra_confirm"
+            android:layout_weight="1" />
+
+        <Button
+            android:textColor="@android:color/white"
+            android:textSize="18dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:background="#B4797979"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Cancel"
+            android:id="@+id/mra_cancel"
+            android:layout_weight="1" />
+
+    </TableRow>
+
+
+</RelativeLayout>

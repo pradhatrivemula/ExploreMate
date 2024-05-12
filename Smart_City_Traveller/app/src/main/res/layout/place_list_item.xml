@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <android.support.v7.widget.CardView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/card_view"
+        xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        card_view:cardBackgroundColor="@android:color/white"
+        card_view:cardCornerRadius="10dp"
+        card_view:cardElevation="5dp"
+        card_view:cardUseCompatPadding="true">
+
+        <TableLayout
+            android:layout_margin="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TableRow
+                android:id="@+id/nametb"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:textStyle="bold"
+                    android:id="@+id/pl_name"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:text="Large Text"
+                    android:layout_weight="1" />
+            </TableRow>
+
+            <TableRow
+                android:layout_marginTop="5dp"
+                android:id="@+id/conttb"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <TextView
+                    android:id="@+id/pl_cont"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="Large Text"
+                    android:layout_weight="1" />
+            </TableRow>
+
+            <TableRow
+                android:layout_marginTop="5dp"
+                android:id="@+id/addrtb"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <TextView
+                    android:id="@+id/pl_add"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="Large Text"
+                    android:layout_weight="1" />
+            </TableRow>
+
+            <TableRow
+                android:layout_marginTop="5dp"
+                android:id="@+id/disttb"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <TextView
+                    android:id="@+id/pl_dist"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="Large Text"
+                    android:layout_weight="1" />
+            </TableRow>
+
+            <TableRow
+                android:layout_marginTop="5dp"
+                android:id="@+id/opentilltb"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <TextView
+                    android:id="@+id/pl_open"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="Large Text"
+                    android:layout_weight="1" />
+            </TableRow>
+
+            <TableRow
+                android:layout_marginTop="5dp"
+                android:id="@+id/pricetb"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <TextView
+                    android:id="@+id/pl_price"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="Large Text"
+                    android:layout_weight="1" />
+            </TableRow>
+
+            <TableRow
+                android:layout_marginTop="5dp"
+                android:id="@+id/ratingtb"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <TextView
+                    android:id="@+id/pl_rating"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="Large Text"
+                    android:layout_weight="1" />
+            </TableRow>
+
+            <TableRow
+                android:layout_marginTop="5dp"
+                android:id="@+id/reviewtb"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <TextView
+                    android:id="@+id/pl_review"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="Large Text"
+                    android:layout_weight="1" />
+            </TableRow>
+
+            <TableRow
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <Button
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="18dp"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="Select"
+                    android:id="@+id/pl_select"
+                    android:layout_weight="4" />
+
+                <ImageView
+                    android:padding="5dp"
+                    android:src="@drawable/mapmark"
+                    android:layout_width="0dp"
+                    android:layout_height="50dp"
+                    android:id="@+id/pl_map"
+                    android:layout_weight="1"/>
+            </TableRow>
+        </TableLayout>
+
+        </android.support.v7.widget.CardView>
+
+
+
+</RelativeLayout>

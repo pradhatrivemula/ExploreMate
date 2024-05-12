@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ray"
+    android:background="@drawable/back"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <TableRow
+        android:gravity="center"
+        android:id="@id/tbprog"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:gravity="center"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <ProgressBar
+                style="?android:attr/progressBarStyleLarge"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/progressBar3" />
+            <TextView
+                android:layout_marginTop="5dp"
+                android:textSize="20dp"
+                android:gravity="center"
+                android:typeface="serif"
+                android:textColor="@color/colorPrimary"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="Please Wait!!!..Preparing Route."
+                />
+        </LinearLayout>
+    </TableRow>
+
+    <TableRow
+        android:visibility="gone"
+        android:id="@+id/tblist"
+        android:layout_margin="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ListView
+            android:layout_marginTop="30dp"
+            android:dividerHeight="1dp"
+            android:divider="@android:color/darker_gray"
+            android:layout_marginBottom="50dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/plist" />
+    </TableRow>
+
+    <TableRow
+        android:visibility="gone"
+        android:id="@+id/tbbtn"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:gravity="bottom"
+        android:layout_marginBottom="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <Button
+            android:textColor="@color/colorPrimary"
+            android:layout_marginRight="10dp"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Confirm"
+            android:id="@+id/pconfirm"
+            android:layout_weight="1" />
+
+        <Button
+            android:textColor="@color/colorPrimary"
+            android:layout_marginLeft="10dp"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Cancel"
+            android:id="@+id/pcancel"
+            android:layout_weight="1" />
+    </TableRow>
+
+    <TableRow
+        android:visibility="gone"
+        android:id="@+id/tbhead"
+        android:layout_marginTop="50dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:textSize="20dp"
+            android:gravity="center"
+            android:typeface="serif"
+            android:textColor="@color/colorPrimary"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Large Text"
+            android:id="@+id/sel_place"
+            android:layout_weight="1" />
+    </TableRow>
+
+    <TableRow
+        android:visibility="gone"
+        android:gravity="bottom"
+        android:id="@+id/tbwait"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:layout_marginBottom="10dp"
+            android:layout_weight="1"
+            android:typeface="serif"
+            android:gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text=""
+            android:id="@+id/waittxt" />
+    </TableRow>
+</RelativeLayout>

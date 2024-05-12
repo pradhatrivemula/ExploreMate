@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:gravity="center"
+    android:background="#00000000"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <ProgressBar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/progressBar6" />
+
+    <TextView
+        android:textColor="@android:color/white"
+        android:layout_marginTop="5dp"
+        android:layout_below="@+id/progressBar6"
+        android:gravity="center"
+        android:typeface="serif"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Please Wait..."
+        android:id="@+id/textView11" />
+</RelativeLayout>
